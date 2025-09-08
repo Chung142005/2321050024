@@ -1,0 +1,17 @@
+/* css thanh công cụ */
+.thanh_cong_cu > div {
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* css nội dung */
+.trai_1 {
+  display: flex;
+}
+.trai_1 > div {
+  display: flex;
+}
