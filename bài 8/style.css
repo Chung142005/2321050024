@@ -1,0 +1,13 @@
+.bgc {
+  height: 100vh;
+  background-color: rgb(129, 122, 122);
+  display: flex;
+  justify-content: center;
+}
+.form {
+  margin-top: 50px;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  display: flex;
+}

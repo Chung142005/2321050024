@@ -1,0 +1,30 @@
+.bgc {
+  width: 100vw;
+  /* height: 100vh; */
+  background-color: rgba(15, 13, 13, 0.473);
+}
+.img {
+  display: flex;
+  justify-content: center;
+}
+.bgc > div {
+}
+div.table {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 550px;
+  height: 650px;
+  border: 1px solid gray;
+}
+.table {
+  display: flex;
+  justify-content: center;
+}
+.text {
+  display: flex;
+  justify-content: center;
+}
+.form > div {
+  display: flex;
+}
