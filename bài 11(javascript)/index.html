@@ -14,13 +14,13 @@
         ten: ten,
       };
       // kiểm tra mảng
-      document.writeln(Array.isArray(arr));
+      document.writeln(Array.isArray(arr) + "<br>");
       //   arr.length lấy độ dài mảng
 
       //   arr.indexOf() lấy ra vị trí xuất hiện đầu tiên của phần tử
-      document.writeln(arr.indexOf(3));
+      document.writeln(arr.indexOf(3) + "<br>");
       // arr.lastIndexOf() lấy ra vị trí xuất hiện cuối cùng của phần tử
-      document.writeln(arr.lastIndexOf(3));
+      document.writeln(arr.lastIndexOf(3) + "<br>");
 
       //   đổi lại giá trị của phần tử trong mảng
 
@@ -29,27 +29,27 @@
       b = ["JavaScript"];
       c = [42, "JS"];
       d = a.concat(b, c);
-      document.writeln(d);
+      document.writeln(d + "<br>");
 
       //   chuyển mảng thành chuỗi
       let e = d.join("-");
-      document.writeln(e);
+      document.writeln(e + "<br>");
 
       // d.pop(); xoá phần tử ở cuối mảng
       d.pop();
-      document.writeln(d);
+      document.writeln(d + "<br>");
 
       //   d.push(); thêm vào cuối danh sách
       d.push("chung");
-      document.writeln(d);
+      document.writeln(d + "<br>");
 
       //   d.reverse(); đảo ngược mảng
       d.reverse();
-      document.writeln(d);
+      document.writeln(d + "<br>");
 
       // arr.shift(); xoá phần tử ở đầu mảng
       d.shift();
-      document.writeln(d);
+      document.writeln(d + "<br>");
 
       //   if else
       let so = 10;
@@ -72,6 +72,7 @@
       } else {
         document.writeln("chào buổi đêm");
       }
+      document.writeln("<br>");
 
       //
       let A, B, C;
@@ -80,7 +81,7 @@
       B = 1;
       C = 100;
       let diemTb = A * 0.6 + B * 0.3 + C * 0.1;
-      if (0 > A && 10 < A && 0 > B && 10 < B && 0 > C && 10 < C) {
+      if (0 > A || 10 < A || 0 > B || 10 < B || 0 > C || 10 < C) {
         document.writeln("nhập điểm lỗi");
       } else {
         if (diemTb < 4) {
