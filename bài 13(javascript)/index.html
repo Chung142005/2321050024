@@ -6,7 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- <h1>Tính tổng</h1>
+    <h1>Tính tổng</h1>
     <div>
       nhập số thứ nhất
       <input type="number" id="soThuNhat" value="0" />
@@ -17,9 +17,27 @@
       <input type="number" id="soThuHai" value="0" />
     </div>
     <div>
-      <button onclick="tinhTong()">Tính tổng</button>
+      <button onclick="tinhToan()">Tính tổng</button>
     </div>
-    <div>kết quả : <input type="number" id="ketQua" class="ketQua" /></div> -->
+    
+
+    <div>
+      <button onclick="tinhToan()">Tính hiệu</button>
+    </div>
+  
+
+    <div>
+      <button onclick="tinhToan()">Tính tích</button>
+    </div>
+    
+
+    <div>
+      <button onclick="tinhToan()">Tính thương</button>
+    </div>
+    <div>kết quả : <input type="number" id="ketQua" class="ketQua" /></div>
+
+
+
     <h1>tính điểm</h1>
     <div>
       nhập điểm A
@@ -86,24 +104,42 @@
         }
         document.getElementById("ketQua").value = diemTb;
       }
-      //   function tinhTong() {
-      //     let soThuNhat = Number(document.getElementById("soThuNhat").value);
-      //     let soThuHai = Number(document.getElementById("soThuHai").value);
-      //     let canhBao = "";
-      //     if (!soThuNhat) {
-      //       canhBao += " Vui lòng nhập vào số thứ nhất ";
-      //     }
-      //     if (!soThuHai) {
-      //       canhBao += " Vui lòng nhập vào số thứ hai ";
-      //     }
-      //     if (canhBao) {
-      //       alert(canhBao);
-      //     }
-      //     // document.writeln(soThuNhat);
-      //     let tong = soThuNhat + soThuHai;
-      //     document.writeln(tong);
-      //     document.getElementById("ketQua").value = tong;
-      //   }
+        function tinhToan(phepTinh) {
+          let soThuNhat = Number(document.getElementById("soThuNhat").value);
+          let soThuHai = Number(document.getElementById("soThuHai").value);
+          let canhBao = "";
+          if (!soThuNhat) {
+            canhBao += " Vui lòng nhập vào số thứ nhất ";
+          }
+          if (!soThuHai) {
+            canhBao += " Vui lòng nhập vào số thứ hai ";
+          }
+          if (canhBao) {
+            alert(canhBao);
+          }
+          // document.writeln(soThuNhat);
+          let ketQua ;
+
+          if(phepTinh=="cong"){
+            ketQua = soThuNhat + soThuHai;
+          }
+          else if(phepTinh=="tru"){
+            ketQua=soThuNhat-soThuHai
+          }
+          else if(phepTinh=="nhan"){
+            ketQua= soThuNhat*soThuHai
+          }
+          else{
+            ketQua=soThuNhat/soThuHai
+          }
+
+
+          
+          
+          document.getElementById("ketQua").value = ketQua;
+        }
+
+        
 
       //   let name = prompt("nhập vào tên của bạn: ");
 
