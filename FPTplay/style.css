@@ -66,6 +66,7 @@ div.banner-infor {
 .banner-infor h2,
 p {
   color: rgba(255, 255, 255, 0.8);
+  text-shadow: 2px 2px 5px black;
 }
 
 .content {
